@@ -1,0 +1,29 @@
+{
+  "name": "gospel-hymns",
+  "version": "1.0.0",
+  "description": "Gospel Hymns and Songs(GHS) for developers",
+  "main": "app.js",
+  "engines": {
+    "node": "12.x",
+    "npm" : "6.x"
+  },
+  "scripts": {
+    "generateDB": "node makeDB.js",
+    "start:dev": "yarn generateDB & nodemon server.js",
+    "start": "yarn generateDB & node server.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.14.2",
+    "app-root-path": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
+  }
+}
